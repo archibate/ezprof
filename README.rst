@@ -229,7 +229,9 @@ I.e. discard the kernel compile time and possible TLB and cache misses on start 
 
 .. warning::
 
-    ``ezprof`` **only works in Python-scope** for Taichi users, e.g.::
+    ``ezprof`` **only works in Python-scope** for Taichi users, e.g.:
+
+    .. code-block:: python
 
         @ti.func
         def substep():

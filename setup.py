@@ -3,6 +3,34 @@ version = '0.0.1'
 description = 'Easy and intuitive Python profiling API'
 with open('README.rst', 'r') as f:
     long_description = f.read()
+long_description = '''
+EzProf
+======
+
+Easy and intuitive Python profiling API, for example:
+
+.. code-block:: python
+
+    import ezprof
+    import time
+
+
+    @ezprof.timed
+    def func():
+        time.sleep(0.0233)
+
+    func()
+
+    with ezprof.scope('hello'):
+        time.sleep(0.2)
+
+    ezprof.start('world')
+    for i in range(450):
+        pass
+    ezprof.stop('world')
+
+    ezprof.show()
+'''
 classifiers = [
     'Intended Audience :: Developers',
     'Operating System :: OS Independent',
