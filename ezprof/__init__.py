@@ -58,7 +58,7 @@ class Record:
         return len(self.rec)
 
 
-class Profiler:
+class PythonProfiler:
     def __init__(self, timer=time.time):
         self.timer = timer
         self.records = {}
@@ -140,7 +140,7 @@ class Profiler:
     __call__ = timed
 
 
-profiler = Profiler()
+profiler = PythonProfiler()
 
 scope = profiler.scope
 show = profiler.show

@@ -1,10 +1,8 @@
 project_name = 'ezprof'
 version = '0.0.1'
-description = 'Easy and intuitive Python profiling'
-long_description = '''
-EzProf
-======
-'''
+description = 'Easy and intuitive Python profiling API'
+with open('README.rst', 'r') as f:
+    long_description = f.read()
 classifiers = [
     'Intended Audience :: Developers',
     'Operating System :: OS Independent',
